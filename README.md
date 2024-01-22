@@ -25,7 +25,12 @@ Switch is an advanced networking device that operates at Data Link layer (2) of 
 Speed- 10/100Mbps, Ports- 4 and 48,  Transmission type- First broadcast, unicast and/or multicast
 
 
-In **CSMA/CD**, a node senses if the wire is busy. If another node happens to be transmitting at that moment, the node will wait a few milliseconds and rechecks the wire. If the wire is free, the node can send out its frame. The wire is essentially first-come-first-serve. When a collision is detected on the wire, all nodes stop transmitting and random “backoff” algorithms determine how long each node must wait in milliseconds before they can retransmit again. The node with the lowest random number will get to transmit first, but once the timers run out, all nodes have equal priority to retransmit.
 
 In **Half-duplex communication**, the cable uses only one wire pair with a digital signal running in both directions on the wire. Both are responsible for transmitting and receiving, which is why we end up with collisions. **Full-duplex communication** uses two pairs of wires at the same time instead of a single wire pair. One pair of wires is used for transmitting and the other pair for receiving. This increases network transmission and eliminates collisions altogether since the wires are separated.
+
+*In **CSMA/CD**, a node senses if the wire is busy. If another node happens to be transmitting at that moment, the node will wait a few milliseconds and rechecks the wire. If the wire is free, the node can send out its frame. The wire is essentially first-come-first-serve. When a collision is detected on the wire, all nodes stop transmitting and random “backoff” algorithms determine how long each node must wait in milliseconds before they can retransmit again. The node with the lowest random number will get to transmit first, but once the timers run out, all nodes have equal priority to retransmit.*
+
+*Network Interface Card is a circuit board that is installed on a computer to connect to the network. Network adapter encompasses both hardware (NIC) and driver components responsible for network communication*
+
+
 
