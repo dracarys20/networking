@@ -1,11 +1,11 @@
-# Networking CCNA
+# Networking CCNA Study
 
 When two or more devices are connected together through physical/logical connection for resource sharing or services, that forms a **network**
 
 - LAN enables devices within small geographical area to connect and communicate with each other. 
 - WAN enables a large geographical area connect each other, often covering multiple LAN's.
 - Internet is a global network that connect billions of devices together through WAN.
-- Intranet is a private network that exsists in the internet, typically uses LAN infrastructure to create a controlled and secure enviromnet for services and resource sharing.
+- Intranet is a private network that exist in the internet, typically uses LAN infrastructure to create a controlled and secure environment for services and resource sharing.
 - Extranet is an extension of intranet network for authorized external users through public telecommunication systems. It securely connects different networks or parts of networks to share information or service.
 
 ![internetwork](https://www.scaler.com/topics/images/internetworking-in-computer-networks-1.webp) 
@@ -43,5 +43,15 @@ In **Half-duplex communication**, the cable uses only one wire pair with a digit
 *Network Interface Card is a circuit board that is installed on a computer to connect to the network. Network adapter encompasses both hardware (NIC) and driver components responsible for network communication. Manufacturers assign a Media Access Control MAC address to a network adapter when it is produced, they are used for local addressing for traffic at the link level*
 
 ## Router
-Routers being layer 3 (network layer of OSI model) devices, separate broadcast domains. Each interface of a router represents a different broadcast domain, preventing broadcasts from crossing between different subnets.
+Routing involves directing traffic between networks using routers and routing tables. A router is a network device that connects different networks together and directs data traffic between them. It operates at the Network Layer (Layer 3) of the OSI model and is responsible for making decisions about the best paths for data to travel from one network to another. Routers use logical addressing, such as IPv4 or IPv6, to identify devices and networks. Each interface of a router represents a different broadcast domain, preventing broadcasts from crossing between different subnets. 
 
+Routing tables are data structures stored in routers that contain information about known networks, the paths to reach them, and associated metrics. Routers use routing tables and dynamic routing protocols (such as IGPs) to determine the best paths for data to travel between networks. The process involves periodic exchange of routing information, updating of routing tables, and selection of the most efficient routes based on various metrics.
+
+Speed- 1-100Mbps wireless/ 1Gbps wired, Ports- 2/4/5/8,  Transmission type- First broadcast, unicast and multicast
+
+## OSI Model
+The OSI model is primarily the standardized network reference model. It describes how data and network information are communicated from an application on one computer through the network media to an application on another computer.
+
+![osi](https://www.researchgate.net/publication/327483011/figure/fig2/AS:668030367436802@1536282259885/The-logical-mapping-between-OSI-basic-reference-model-and-the-TCP-IP-stack.jpg)
+
+The OSI model abstractly describes the functionality provided in seven layers of protocols, dividing the communication complexity between systems/network in a layered architecture. This working notifies error detection and data corruption with high accuracy. Security of the model is addressed in each layer and not just for one layer.
