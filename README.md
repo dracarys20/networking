@@ -52,6 +52,6 @@ Speed- 1-100Mbps wireless/ 1Gbps wired, Ports- 2/4/5/8,  Transmission type- Firs
 ## OSI Model
 The OSI model is primarily the standardized network reference model. It describes how data and network information are communicated from an application on one computer through the network media to an application on another computer.
 
-![osi](https://www.researchgate.net/publication/327483011/figure/fig2/AS:668030367436802@1536282259885/The-logical-mapping-between-OSI-basic-reference-model-and-the-TCP-IP-stack.jpg)
+![osi](https://storage.googleapis.com/blogs-images/ciscoblogs/1/osi-550x425.gif)
 
 The OSI model abstractly describes the functionality provided in seven layers of protocols, dividing the communication complexity between systems/network in a layered architecture. This working notifies error detection and data corruption with high accuracy. Security of the model is addressed in each layer and not just for one layer.
