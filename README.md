@@ -45,7 +45,7 @@ In **Half-duplex communication**, the cable uses only one wire pair with a digit
 ## Router
 Routing involves directing traffic between networks using routers and routing tables. A router is a network device that connects different networks together and directs data traffic between them. It operates at the Network Layer (Layer 3) of the OSI model and is responsible for making decisions about the best paths for data to travel from one network to another. Routers use logical addressing, such as IPv4 or IPv6, to identify devices and networks. Each interface of a router represents a different broadcast domain, preventing broadcasts from crossing between different subnets. 
 
-Routing tables are data structures stored in routers that contain information about known networks, the paths to reach them, and associated metrics. Routers use routing tables and dynamic routing protocols (such as IGPs) to determine the best paths for data to travel between networks. The process involves periodic exchange of routing information, updating of routing tables, and selection of the most efficient routes based on various metrics.
+Routing tables are data structures stored in routers that contain information about known networks, the paths to reach them, and associated metrics. Routers use routing tables and dynamic routing protocols (such as Interior Gateway Protocol) to determine the best paths for data to travel between networks. The process involves periodic exchange of routing information, updating of routing tables, and selection of the most efficient routes based on various metrics.
 
 Speed- 1-100Mbps wireless/ 1Gbps wired, Ports- 2/4/5/8,  Transmission type- First broadcast, unicast and multicast
 
@@ -54,4 +54,15 @@ The OSI model is primarily the standardized network reference model. It describe
 
 ![osi](https://storage.googleapis.com/blogs-images/ciscoblogs/1/osi-550x425.gif)
 
-The OSI model abstractly describes the functionality provided in seven layers of protocols, dividing the communication complexity between systems/network in a layered architecture. This working notifies error detection and data corruption with high accuracy. Security of the model is addressed in each layer and not just for one layer.
+The OSI model abstractly describes the functionality provided in seven layers of protocols, dividing the communication complexity between systems/network in a layered architecture. 
+
+Layer 1 - The Physical Layer is responsible for the transmission and reception of raw data bits (0s and 1s) over a physical medium. 
+- This can be electrical signals, optical signals (utilizing optical fiber or laser) or electromagnetic waves (in wireless networks).
+- Before transmission, the digital bits are often encoded into electrical or optical signals and the characteristics of the physical signal are modified to carry data. For example, varying the amplitude or frequency.
+- It includes the transmission medium, such as antennas, amplifiers, network cables, and transceivers. It also dictates the transmission speed, the max bit rate and bandwidth.
+- It specifies the physical arrangement of devices in a network (topology) and the transmission modes.
+
+Layer 2 - The Data Link layer is responsible for reliable point-to-point and point-to-multipoint communication over a physical link.
+- A data link layer encapsualtes the network datagram into a frame. This frame includes address, access control info and error checks.
+- 
+
