@@ -56,13 +56,17 @@ The OSI model is primarily the standardized network reference model. It describe
 
 The OSI model abstractly describes the functionality provided in seven layers of protocols, dividing the communication complexity between systems/network in a layered architecture. 
 
-Layer 1 - The Physical Layer is responsible for the transmission and reception of raw data bits (0s and 1s) over a physical medium. 
+Layer 1 - The Physical layer is responsible for the transmission and reception of raw data bits (0s and 1s) over a physical medium. 
 - This can be electrical signals, optical signals (utilizing optical fiber or laser) or electromagnetic waves (in wireless networks).
 - Before transmission, the digital bits are often encoded into electrical or optical signals and the characteristics of the physical signal are modified to carry data. For example, varying the amplitude or frequency.
-- It includes the transmission medium, such as antennas, amplifiers, network cables, and transceivers. It also dictates the transmission speed, the max bit rate and bandwidth.
+- It includes the transmission medium, such as copper cables or fiber optics or wireless. It also dictates the transmission speed, the max bit rate and bandwidth.
 - It specifies the physical arrangement of devices in a network (topology) and the transmission modes.
 
 Layer 2 - The Data Link layer is responsible for reliable point-to-point and point-to-multipoint communication over a physical link.
-- A data link layer encapsualtes the network datagram into a frame. This frame includes address, access control info and error checks.
-- 
+- It encapsualtes the network datagram into a frame. This frame includes address, access control info and error checks.
+- each NIC is assigned a unique MAC address by the manufacturer, data link layer uses MAC addressing to identify the source and destination.
+- Controlling access ensures that data is transmitted in an orderly and collision-free manner.
+- It includes error-detection mechanism such as Frame Check Sequence (FCS) to identify errors in transmitted frames.
+
+Layer 3 - The Network layer
 
