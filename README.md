@@ -63,10 +63,18 @@ Layer 1 - The Physical layer is responsible for the transmission and reception o
 - It specifies the physical arrangement of devices in a network (topology) and the transmission modes.
 
 Layer 2 - The Data Link layer is responsible for reliable point-to-point and point-to-multipoint communication over a physical link.
-- It encapsualtes the network datagram into a frame. This frame includes address, access control info and error checks.
-- each NIC is assigned a unique MAC address by the manufacturer, data link layer uses MAC addressing to identify the source and destination.
-- Controlling access ensures that data is transmitted in an orderly and collision-free manner.
-- It includes error-detection mechanism such as Frame Check Sequence (FCS) to identify errors in transmitted frames.
+- It begins by encapsualting the network datagram into a frame. This frame includes address info, flow control and error checks.
+- each NIC is assigned a unique MAC address by the manufacturer, data link layer uses that MAC addressing to identify the source and destination.
+- The Logical Link Control sublayer ensures proper sequencing and flow control of frames during data transmission.
+- It includes error-detection mechanism such as Frame Check Sequence (FCS) to verify intergrity of received frames and uses CSMA/CD protocol to determine how devices coexist and share the available bandwidth in the transmission medium.
+- In case of error, that specific frame is either discarded or requested again for retransmission.
 
-Layer 3 - The Network layer
+Layer 3 - The Network layer is responsible for routing and forwarding data between different networks, enabling communication across interconnected networks. It determines the best path for data across interconnected networks, using logical addressing, routing tables, encapsulation, and translation between logical and physical addresses. 
+- Each packet is assigned a logical network address, typically IPv4 or IPv6.
+- It determines an optimal path for packet based on destination IP and router's routing table.
+- The routing table are dynamically updated using routing protocols like Interior Gateway Protocols (RIP, OSPF) and Exterior Gateway Protocol (BGP).
+- At each router along the path, the packet undergoes encapsulation and decapsulation. The router encapsulates the packet in a new frame suitable for the next network segment, adding a new header. At the destination, the final router decapsulates the packet to extract the original data.
+
+Layer 4 - The 
+  
 
