@@ -61,6 +61,7 @@ Layer 1 - The Physical layer is responsible for the transmission and reception o
 - Before transmission, the digital bits are often encoded into electrical or optical signals and the characteristics of the physical signal are modified to carry data. For example, varying the amplitude or frequency.
 - It includes the transmission medium, such as copper cables or fiber optics or wireless. It also dictates the transmission speed, the max bit rate and bandwidth.
 - It specifies the physical arrangement of devices in a network (topology) and the transmission modes.
+- Protocols used - Bluetooth, ethernet, WiFi
 
 Layer 2 - The Data Link layer is responsible for reliable point-to-point and point-to-multipoint communication over a physical link.
 - It begins by encapsualting the network datagram into a frame. This frame includes address info, flow control and error checks.
@@ -68,13 +69,23 @@ Layer 2 - The Data Link layer is responsible for reliable point-to-point and poi
 - The Logical Link Control sublayer ensures proper sequencing and flow control of frames during data transmission.
 - It includes error-detection mechanism such as Frame Check Sequence (FCS) to verify intergrity of received frames and uses CSMA/CD protocol to determine how devices coexist and share the available bandwidth in the transmission medium.
 - In case of error, that specific frame is either discarded or requested again for retransmission.
+- Protocols used - ARP
 
 Layer 3 - The Network layer is responsible for routing and forwarding data between different networks, enabling communication across interconnected networks. It determines the best path for data across interconnected networks, using logical addressing, routing tables, encapsulation, and translation between logical and physical addresses. 
 - Each packet is assigned a logical network address, typically IPv4 or IPv6.
 - It determines an optimal path for packet based on destination IP and router's routing table.
 - The routing table are dynamically updated using routing protocols like Interior Gateway Protocols (RIP, OSPF) and Exterior Gateway Protocol (BGP).
 - At each router along the path, the packet undergoes encapsulation and decapsulation. The router encapsulates the packet in a new frame suitable for the next network segment, adding a new header. At the destination, the final router decapsulates the packet to extract the original data.
+- Protocols used - IPv4, IPv6
 
-Layer 4 - The 
-  
+Layer 4 - The Transport Layer is responsible for ensuring reliable end-to-end communication between two devices across a network. It manages various aspects of data transmission, including error detection, flow control, and segmentation. 
+- The connection is established based on Transmission Control Protocol OR User Datagram Protocol.
+- The data is divided into smaller units called segments, this is to fit in with the maximum size allowed for transmission over that network.
+- Each segment is assigned a sequence number. Sequence numbers help in proper ordering and reassembly of segments at the destination, especially if it arrives in random order.
+- Techniques like sliding window protocols are used to manage the rate of data transmission, preventing congestion and ensuring efficient data transfer.
+- Errors are detected with cheksum info, If detected, retransmission will be requested for that corrupted segment.
+- Protocols used - TCP, UDP
+
+Layer 5 - The Session Layer is responsible for establishing, maintaining, and terminating communication sessions between two devices. A communication session is a logical connection between applications that enables them to exchange data.
+- The session establishment begins with 
 
