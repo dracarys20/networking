@@ -8,7 +8,7 @@ When two or more devices are connected together through physical/logical connect
 - Intranet is a private network that exist in the internet, typically uses LAN infrastructure to create a controlled and secure environment for services and resource sharing.
 - Extranet is an extension of intranet network for authorized external users through public telecommunication systems. It securely connects different networks or parts of networks to share information or service.
 
-![internetwork](https://www.scaler.com/topics/images/internetworking-in-computer-networks-1.webp) 
+<img src="https://www.scaler.com/topics/images/internetworking-in-computer-networks-1.webp" width=500> 
 Wi-Fi (Wireless Fidelity) uses radio waves to transmit data wirelessly between devices.
 Ethernet typically uses copper cables for wired connection. 
 
