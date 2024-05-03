@@ -1,4 +1,4 @@
-# Networking CCNA Study
+# Networking from CCNA Study
 
 When two or more devices are connected together through physical/logical connection for resource sharing or services, that forms a **network**
 
